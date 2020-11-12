@@ -27,6 +27,18 @@ class Basic extends React.Component {
                         </BasicScoreInsideCounter>
                     </BasicScoreInsideDiv>
                 </BasicScoreOutsideDiv>
+                <BasicMiddleDiv>
+                    <BasicPaperScissorsDiv>
+                        <PaperButton></PaperButton>
+                        <ScissorsButton></ScissorsButton>
+
+                    </BasicPaperScissorsDiv>
+                    <RockButton></RockButton>
+                </BasicMiddleDiv>
+                <BasicBottomDiv>
+                    <SwitchDifficultyButton>ADVANCED</SwitchDifficultyButton>
+                    <ShowRulesButton>RULES</ShowRulesButton>
+                </BasicBottomDiv>
             </BasicOutsideDiv>
         )
     }
