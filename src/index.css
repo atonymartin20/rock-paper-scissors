@@ -4,6 +4,11 @@
 }
 
 @font-face {
+	font-family: 'Barlow Semi Condensed Regular';
+	src: local('Barlow Semi Condensed'), url(./fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Regular.ttf) format('truetype');
+}
+
+@font-face {
 	font-family: 'Barlow Semi Condensed Bold';
 	src: local('Barlow Semi Condensed'), url(./fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Bold.ttf) format('truetype');
 }
