@@ -6,7 +6,6 @@ import RockImg from '../../images/icon-rock.svg';
 
 class Step0 extends React.Component {
     render() {
-        console.log(this.props)
         return (
             <BasicStep0Div>
                 <BasicPaperScissorsDiv>
