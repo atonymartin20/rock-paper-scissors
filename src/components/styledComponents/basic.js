@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import '../../index.css';
 import BackgroundTriangleImg from '../../images/bg-triangle.svg';
+import Cursor from '../../images/tap.svg';
 
 // Basic Index
 const BasicOutsideDiv = styled.div`
@@ -76,13 +77,14 @@ const BasicStep0Div = styled.div`
 const BasicRockImg = styled.img`
     width: 67px;
     height: 67px;    
-    margin-top: 10px;
+    margin-top: 12px;
 `;
 
 const BasicPaperImg = styled.img`
-    width: 68px;
+    width: 70px;
     height: 82px;    
     margin-top: 10px;
+    padding-right: 2px;
 `;
 
 const BasicScissorsImg = styled.img`
@@ -99,69 +101,75 @@ const BasicPaperScissorsDiv = styled.div`
 `;
 
 const PaperDiv = styled.div`
-    width: 200px;
-    height: 205px;
+    width: 199px;
+    height: 203px;
     border-radius: 50%;
     background-color: white;
-    background-image: radial-gradient(circle farthest-corner at center 86px, hsl(230, 89%, 65%) 70%, hsl(230, 65%, 46%) 71%);
+    background-image: linear-gradient(hsl(230, 89%, 65%), hsl(230, 89%, 62%));
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 40px;
+    box-shadow: 0 -8px #2945C2 inset;
 `;
 
 const PaperButton = styled.button`
-    width: 154px;
-    height: 154px;
+    width: 152px;
+    height: 152px;
     border-radius: 50%;
     background-color: #DBDBDB;
     border: none;
-    background-image: radial-gradient(circle farthest-corner at center 93px, hsl(0, 0%, 94%) 70%, hsl(228, 22%, 77%) 10%);
+    background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
     margin-bottom: 5px;
+    box-shadow: 0 8px #BFC0CD inset;
 `;
 
 const RockDiv = styled.div`
-    width: 200px;
-    height: 205px;
+    width: 199px;
+    height: 203px;
     border-radius: 50%;
     background-color: white;
-    background-image: radial-gradient(circle farthest-corner at center 86px, hsl(349, 70%, 56%) 70%, hsl(347, 74%, 35%) 71%);
+    background-image: linear-gradient(hsl(349, 70%, 56%), hsl(349, 71%, 52%));
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 22px;
+    margin-top: 25px;
+    box-shadow: 0 -8px #9F1933 inset;
 `;
 
 const RockButton = styled.button`
-    width: 154px;
-    height: 154px;
+    width: 152px;
+    height: 152px;
     border-radius: 50%;
     background-color: #DBDBDB;
     border: none;
-    background-image: radial-gradient(circle farthest-corner at center 93px, hsl(0, 0%, 94%) 70%, hsl(228, 22%, 77%) 10%);
+    background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
     margin-bottom: 5px;
+    box-shadow: 0 8px #BFC0CD inset;
 `;
 
 const ScissorsDiv = styled.div`
-    width: 200px;
-    height: 205px;
+    width: 199px;
+    height: 203px;
     border-radius: 50%;
     background-color: white;
-    background-image: radial-gradient(circle farthest-corner at center 86px, hsl(40, 84%, 53%) 70%, hsl(28, 76%, 44%) 71%);
+    background-image: linear-gradient(hsl(40, 84%, 53%), hsl(39, 89%, 49%));
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 40px;
+    box-shadow: 0 -8px #C76C1B inset;
 `;
 
 const ScissorsButton = styled.button`
-    width: 154px;
-    height: 154px;
+    width: 152px;
+    height: 152px;
     border-radius: 50%;
     background-color: #DBDBDB;
     border: none;
-    background-image: radial-gradient(circle farthest-corner at center 93px, hsl(0, 0%, 94%) 70%, hsl(228, 22%, 77%) 10%);
+    background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
     margin-bottom: 5px;
+    box-shadow: 0 8px #BFC0CD inset;
 `;
 
 // Basic Step 1
@@ -176,14 +184,9 @@ const BasicStep1Div = styled.div`
 const BasicStep1PlayerSide = styled.div`
     width: 50%;
     height: 100%;
-    font-family: 'Barlow Semi Condensed Regular', serif;
-    font-size: 2.25rem;
-    color: orange;
-    font-weight: 600;
-    letter-spacing: 3.7px;
     display: flex;
-    justify-content: center;
-    background-color: green;
+    flex-direction: column;
+    align-items: center;
     padding-right: 3px;
     padding-top: 2px;
 `;
@@ -191,14 +194,255 @@ const BasicStep1PlayerSide = styled.div`
 const BasicStep1ComputerSide = styled.div`
     width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 9px;
+    padding-top: 2px;
+`;
+
+const PlayerHeader = styled.div`
     font-family: 'Barlow Semi Condensed Regular', serif;
-    font-size: 2.2rem;
+    font-size: 2.25rem;
     color: #FFFEFF;
     font-weight: 600;
-    letter-spacing: 3.75px;
+    letter-spacing: 3.7px;
+`;
+
+const ComputerHeader = styled.div`
+    font-family: 'Barlow Semi Condensed Regular', serif;
+    font-size: 2.25rem;
+    color: #FFFEFF;
+    font-weight: 600;
+    letter-spacing: 3.7px;
+    margin-right: 17px;
+`;
+
+const ComputerPlaceHolder = styled.div`
+    border-radius: 50%;
+    background-color: #172240;
+    background: linear-gradient(#192442 0%, #151E3D 100%);
+    width: 227px;
+    height: 227px;
+    margin-top: 100px;
+    margin-right: 13px;
+`;
+
+const LargePaperDiv = styled.div`
+    width: 294px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: linear-gradient(hsl(230, 89%, 65%), hsl(230, 89%, 62%));
     display: flex;
     justify-content: center;
-    background-color: blue;
+    align-items: center;
+    margin-top: 68px;
+    box-shadow: 0 -12px #2945C2 inset;
+`;
+
+const LargePaperButton = styled.button`
+    width: 224px;
+    height: 226px;
+    border-radius: 50%;
+    background-color: #DBDBDB;
+    border: none;
+    background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
+    margin-bottom: 8px;
+    box-shadow: 0 12px #BFC0CD inset;
+`;
+
+const LargeScissorsDiv = styled.div`
+    width: 294px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: linear-gradient(hsl(40, 84%, 53%), hsl(39, 89%, 49%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 68px;
+    box-shadow: 0 -12px #C76C1B inset;
+`;
+
+const LargeScissorsButton = styled.button`
+    width: 224px;
+    height: 226px;
+    border-radius: 50%;
+    background-color: #DBDBDB;
+    border: none;
+    background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
+    margin-bottom: 8px;
+    box-shadow: 0 12px #BFC0CD inset;
+`;
+
+const LargeRockDiv = styled.div`
+    width: 294px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: linear-gradient(hsl(349, 70%, 56%), hsl(349, 71%, 52%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 68px;
+    box-shadow: 0 -12px #9F1933 inset;
+`;
+
+const LargeRockButton = styled.button`
+    width: 224px;
+    height: 226px;
+    border-radius: 50%;
+    background-color: #DBDBDB;
+    border: none;
+    background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
+    margin-bottom: 8px;
+    box-shadow: 0 12px #BFC0CD inset;
+`;
+
+const LargeRockImg = styled.img`
+    width: 97px;
+    height: 96px;    
+    margin-top: 16px;
+    margin-left: 3px;
+`;
+
+const LargePaperImg = styled.img`
+    width: 100px;
+    height: 100px;    
+    margin-top: 10px;
+`;
+
+const LargeScissorsImg = styled.img`
+    width: 103px;
+    height: 120px;    
+    margin-top: 13px;
+    margin-right: 15px;
+`;
+
+// Step 2
+const BasicStep2ComputerSide = styled.div`
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 27px;
+    padding-top: 2px;
+`;
+
+const ComputerHeader2 = styled.div`
+    font-family: 'Barlow Semi Condensed Regular', serif;
+    font-size: 2.25rem;
+    color: #FFFEFF;
+    font-weight: 600;
+    letter-spacing: 3.7px;
+    margin-left: 2px;
+`;
+
+// Step 3
+const BasicStep3Div = styled.div`
+    width: 950px;
+    background-color: inherit;
+    margin-top: 75px;
+    height: 422px;
+    display: flex;
+    margin-right: 10px;
+`;
+
+const BasicStep3PlayerSide = styled.div`
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2px;
+`;
+
+const PlayerHeader2 = styled.div`
+    font-family: 'Barlow Semi Condensed Regular', serif;
+    font-size: 2.25rem;
+    color: #FFFEFF;
+    font-weight: 600;
+    letter-spacing: 3.8px;
+    padding-left: 75px;
+`;
+
+const BasicStep3MiddleDiv = styled.div`
+    width: 280px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-left: 7.5px;
+`;
+
+const BasicStep3MiddleHeader = styled.div`
+    font-size: 5.37rem;
+    color: white;
+    letter-spacing: 1.7px;
+    margin-bottom: 23px;
+    margin-top: 23px;
+`;
+
+const BasicStep3Button = styled.div`
+    width: 220px;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: flex;
+    font-family: 'Barlow Semi Condensed Regular', serif;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+    color: hsl(229, 25%, 31%);
+    letter-spacing: 2.8px;
+    cursor: url(${Cursor}), pointer;
+    :hover & {
+        color: #B73D53
+    }
+    margin-right: 3px;
+`;
+
+const BasicStep3ComputerSide = styled.div`
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 2px;
+`;
+const OutsideWinningCircle = styled.div`
+    width: 725px;
+    min-height: 725px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #202F4E;
+`;
+
+const MiddleWinningCircle = styled.div`
+    width: 560px;
+    height: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #253453;
+`;
+
+const InsideWinningCircle = styled.div`
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2C3755;
 `;
 
 export {
@@ -222,4 +466,28 @@ export {
     BasicStep1Div,
     BasicStep1PlayerSide,
     BasicStep1ComputerSide,
+    PlayerHeader,
+    ComputerHeader,
+    ComputerPlaceHolder,
+    LargePaperDiv,
+    LargePaperButton,
+    LargeScissorsDiv,
+    LargeScissorsButton,
+    LargeRockDiv,
+    LargeRockButton,
+    LargeRockImg,
+    LargeScissorsImg,
+    LargePaperImg,
+    BasicStep2ComputerSide,
+    ComputerHeader2,
+    BasicStep3Div,
+    BasicStep3PlayerSide,
+    PlayerHeader2,
+    BasicStep3MiddleDiv,
+    BasicStep3MiddleHeader,
+    BasicStep3Button,
+    BasicStep3ComputerSide,
+    OutsideWinningCircle,
+    MiddleWinningCircle,
+    InsideWinningCircle,
 }
