@@ -12,6 +12,7 @@ const BasicOutsideDiv = styled.div`
     justify-content: center;
     align-items: flex-end;
     flex-wrap: wrap;
+    overflow: hidden;
 `;
 
 // Basic Score Section
@@ -30,6 +31,7 @@ const BasicScoreOutsideDiv = styled.div`
 const BasicScoreTitle = styled.img`
     margin-left: 5.5px;
     margin-top: 4px;
+    z-index: 100;
 `;
 
 const BasicScoreInsideDiv = styled.div`
@@ -42,6 +44,7 @@ const BasicScoreInsideDiv = styled.div`
     justify-content: space-between;
     border-radius: 7px;
     padding: 17px;
+    z-index: 100;
 `;
 
 const BasicScoreInsideP = styled.p`
@@ -113,7 +116,7 @@ const PaperDiv = styled.div`
     box-shadow: 0 -8px #2945C2 inset;
 `;
 
-const PaperButton = styled.button`
+const PaperButton = styled.div`
     width: 152px;
     height: 152px;
     border-radius: 50%;
@@ -122,6 +125,9 @@ const PaperButton = styled.button`
     background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
     margin-bottom: 5px;
     box-shadow: 0 8px #BFC0CD inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 const RockDiv = styled.div`
@@ -137,7 +143,7 @@ const RockDiv = styled.div`
     box-shadow: 0 -8px #9F1933 inset;
 `;
 
-const RockButton = styled.button`
+const RockButton = styled.div`
     width: 152px;
     height: 152px;
     border-radius: 50%;
@@ -146,6 +152,9 @@ const RockButton = styled.button`
     background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
     margin-bottom: 5px;
     box-shadow: 0 8px #BFC0CD inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 const ScissorsDiv = styled.div`
@@ -161,7 +170,7 @@ const ScissorsDiv = styled.div`
     box-shadow: 0 -8px #C76C1B inset;
 `;
 
-const ScissorsButton = styled.button`
+const ScissorsButton = styled.div`
     width: 152px;
     height: 152px;
     border-radius: 50%;
@@ -170,6 +179,9 @@ const ScissorsButton = styled.button`
     background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
     margin-bottom: 5px;
     box-shadow: 0 8px #BFC0CD inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 // Basic Step 1
@@ -241,7 +253,7 @@ const LargePaperDiv = styled.div`
     box-shadow: 0 -12px #2945C2 inset;
 `;
 
-const LargePaperButton = styled.button`
+const LargePaperButton = styled.div`
     width: 224px;
     height: 226px;
     border-radius: 50%;
@@ -250,6 +262,9 @@ const LargePaperButton = styled.button`
     background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
     margin-bottom: 8px;
     box-shadow: 0 12px #BFC0CD inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 const LargeScissorsDiv = styled.div`
@@ -265,7 +280,7 @@ const LargeScissorsDiv = styled.div`
     box-shadow: 0 -12px #C76C1B inset;
 `;
 
-const LargeScissorsButton = styled.button`
+const LargeScissorsButton = styled.div`
     width: 224px;
     height: 226px;
     border-radius: 50%;
@@ -274,6 +289,9 @@ const LargeScissorsButton = styled.button`
     background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
     margin-bottom: 8px;
     box-shadow: 0 12px #BFC0CD inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 const LargeRockDiv = styled.div`
@@ -289,7 +307,7 @@ const LargeRockDiv = styled.div`
     box-shadow: 0 -12px #9F1933 inset;
 `;
 
-const LargeRockButton = styled.button`
+const LargeRockButton = styled.div`
     width: 224px;
     height: 226px;
     border-radius: 50%;
@@ -298,6 +316,9 @@ const LargeRockButton = styled.button`
     background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
     margin-bottom: 8px;
     box-shadow: 0 12px #BFC0CD inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 const LargeRockImg = styled.img`
@@ -309,8 +330,9 @@ const LargeRockImg = styled.img`
 
 const LargePaperImg = styled.img`
     width: 100px;
-    height: 100px;    
-    margin-top: 10px;
+    height: 118px;    
+    margin-top: 15px;
+    margin-right: 5px;
 `;
 
 const LargeScissorsImg = styled.img`
@@ -366,6 +388,7 @@ const PlayerHeader2 = styled.div`
     font-weight: 600;
     letter-spacing: 3.8px;
     padding-left: 75px;
+    z-index: 100;
 `;
 
 const BasicStep3MiddleDiv = styled.div`
@@ -376,7 +399,8 @@ const BasicStep3MiddleDiv = styled.div`
     justify-content: center;
     align-items: center;
     padding-top: 5px;
-    padding-left: 7.5px;
+    padding-left: 11.5px;
+    z-index: 100;
 `;
 
 const BasicStep3MiddleHeader = styled.div`
@@ -401,7 +425,7 @@ const BasicStep3Button = styled.div`
     color: hsl(229, 25%, 31%);
     letter-spacing: 2.8px;
     cursor: url(${Cursor}), pointer;
-    :hover & {
+    &:hover {
         color: #B73D53
     }
     margin-right: 3px;
@@ -414,35 +438,66 @@ const BasicStep3ComputerSide = styled.div`
     flex-direction: column;
     align-items: flex-end;
     padding-top: 2px;
-`;
-const OutsideWinningCircle = styled.div`
-    width: 725px;
-    min-height: 725px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: #202F4E;
+    padding-right: 10px;
 `;
 
-const MiddleWinningCircle = styled.div`
-    width: 560px;
-    height: 560px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: #253453;
+const ComputerHeader3 = styled.div`
+    font-family: 'Barlow Semi Condensed Regular', serif;
+    font-size: 2.25rem;
+    color: #FFFEFF;
+    font-weight: 600;
+    letter-spacing: 3.8px;
+    padding-right: 34px;
+    z-index: 100;
 `;
 
-const InsideWinningCircle = styled.div`
-    width: 420px;
-    height: 420px;
+const WinningPaperDiv = styled.div`
+    width: 294px;
+    height: 300px;
     border-radius: 50%;
+    background-color: white;
+    background-image: linear-gradient(hsl(230, 89%, 65%), hsl(230, 89%, 62%));
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2C3755;
+    margin-top: 68px;
+    box-shadow: 0 -12px #2945C2 inset,
+    0 0 0 65px rgba(44,55,85,0.65),
+    0 0 0 135px rgba(36,49,81,0.80),
+    0 -3px 0 212.5px rgba(36,49,81,0.50);
+`;
+
+
+const WinningScissorsDiv = styled.div`
+    width: 294px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: linear-gradient(hsl(40, 84%, 53%), hsl(39, 89%, 49%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 68px;
+    box-shadow: 0 -12px #C76C1B inset,
+    0 0 0 65px rgba(44,55,85,0.65),
+    0 0 0 135px rgba(36,49,81,0.80),
+    0 -3px 0 212.5px rgba(36,49,81,0.50);
+`;
+
+const WinningRockDiv = styled.div`
+    width: 294px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: linear-gradient(hsl(349, 70%, 56%), hsl(349, 71%, 52%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 68px;
+    box-shadow: 0 -12px #9F1933 inset,
+    0 0 0 65px rgba(44,55,85,0.65),
+    0 0 0 135px rgba(36,49,81,0.80),
+    0 -3px 0 212.5px rgba(36,49,81,0.50);
 `;
 
 export {
@@ -487,7 +542,8 @@ export {
     BasicStep3MiddleHeader,
     BasicStep3Button,
     BasicStep3ComputerSide,
-    OutsideWinningCircle,
-    MiddleWinningCircle,
-    InsideWinningCircle,
+    ComputerHeader3,
+    WinningPaperDiv,
+    WinningRockDiv,
+    WinningScissorsDiv,
 }
