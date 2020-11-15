@@ -38,7 +38,6 @@ class Basic extends React.Component {
             userChosePaper: true,
         })
         setTimeout(this.computerChooses, 2000);
-
     }
 
     userChoosesScissors = () => {
@@ -149,10 +148,6 @@ class Basic extends React.Component {
                 })
             }
         }
-
-        else {
-            console.log('The process failed somewhere.')
-        }
     }
 
     playAgain = () => {
@@ -176,7 +171,7 @@ class Basic extends React.Component {
                 <BasicOutsideDiv>
                     <ScoreSection score={this.props.score} />
                     <Step0 userChoiceMade={this.state.userChoiceMade} userChoseRock={this.state.userChoseRock} userChosePaper={this.state.userChosePaper} userChoseScissors={this.state.userChoseScissors} userChoosesRock={this.userChoosesRock} userChoosesPaper={this.userChoosesPaper} userChoosesScissors={this.userChoosesScissors} />
-                    <BottomSection showBasic={this.props.showBasic} showAdvanced={this.props.showAdvanced} switchMode={this.props.switchMode} />
+                    <BottomSection showBasic={this.props.showBasic} showAdvanced={this.props.showAdvanced} switchMode={this.props.switchMode} showBasicRules={this.props.showBasicRules} showAdvancedRules={this.props.showAdvancedRules} showBasicRulesModal={this.props.showBasicRulesModal} showAdvancedRulesModal={this.props.showAdvancedRulesModal} closeRules={this.props.closeRules}/>
                 </BasicOutsideDiv>
             )
         }
@@ -185,7 +180,7 @@ class Basic extends React.Component {
                 <BasicOutsideDiv>
                     <ScoreSection score={this.props.score} />
                     <Step1 userChoiceMade={this.state.userChoiceMade} userChoseRock={this.state.userChoseRock} userChosePaper={this.state.userChosePaper} userChoseScissors={this.state.userChoseScissors} userChoosesRock={this.userChoosesRock} userChoosesPaper={this.userChoosesPaper} userChoosesScissors={this.userChoosesScissors}/>
-                    <BottomSection showBasic={this.props.showBasic} showAdvanced={this.props.showAdvanced} switchMode={this.props.switchMode} />
+                    <BottomSection showBasic={this.props.showBasic} showAdvanced={this.props.showAdvanced} switchMode={this.props.switchMode} showBasicRules={this.props.showBasicRules} showAdvancedRules={this.props.showAdvancedRules} showBasicRulesModal={this.props.showBasicRulesModal} showAdvancedRulesModal={this.props.showAdvancedRulesModal} closeRules={this.props.closeRules}/>
                 </BasicOutsideDiv>
             )
         }
@@ -195,7 +190,7 @@ class Basic extends React.Component {
                 <BasicOutsideDiv>
                     <ScoreSection score={this.props.score} />
                     <Step2 userChoiceMade={this.state.userChoiceMade} userChoseRock={this.state.userChoseRock} userChosePaper={this.state.userChosePaper} userChoseScissors={this.state.userChoseScissors} userChoosesRock={this.userChoosesRock} userChoosesPaper={this.userChoosesPaper} userChoosesScissors={this.userChoosesScissors} computerChoseRock={this.state.computerChoseRock} computerChosePaper={this.state.computerChosePaper} computerChoseScissors={this.state.computerChoseScissors} />
-                    <BottomSection showBasic={this.props.showBasic} showAdvanced={this.props.showAdvanced} switchMode={this.props.switchMode} />
+                    <BottomSection showBasic={this.props.showBasic} showAdvanced={this.props.showAdvanced} switchMode={this.props.switchMode} showBasicRules={this.props.showBasicRules} showAdvancedRules={this.props.showAdvancedRules} showBasicRulesModal={this.props.showBasicRulesModal} showAdvancedRulesModal={this.props.showAdvancedRulesModal} closeRules={this.props.closeRules}/>
                 </BasicOutsideDiv>
             )
         }
@@ -205,7 +200,7 @@ class Basic extends React.Component {
                 <BasicOutsideDiv>
                     <ScoreSection score={this.props.score} />
                     <Step3 userChoiceMade={this.state.userChoiceMade} userChoseRock={this.state.userChoseRock} userChosePaper={this.state.userChosePaper} userChoseScissors={this.state.userChoseScissors} userChoosesRock={this.userChoosesRock} userChoosesPaper={this.userChoosesPaper} userChoosesScissors={this.userChoosesScissors} computerChoseRock={this.state.computerChoseRock} computerChosePaper={this.state.computerChosePaper} computerChoseScissors={this.state.computerChoseScissors} gameResult={this.state.gameResult} playAgain={this.playAgain} />
-                    <BottomSection showBasic={this.props.showBasic} showAdvanced={this.props.showAdvanced} switchMode={this.props.switchMode} />
+                    <BottomSection showBasic={this.props.showBasic} showAdvanced={this.props.showAdvanced} switchMode={this.props.switchMode} showBasicRules={this.props.showBasicRules} showAdvancedRules={this.props.showAdvancedRules} showBasicRulesModal={this.props.showBasicRulesModal} showAdvancedRulesModal={this.props.showAdvancedRulesModal} closeRules={this.props.closeRules}/>
                 </BasicOutsideDiv>
             )
         }
