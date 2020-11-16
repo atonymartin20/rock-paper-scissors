@@ -204,7 +204,6 @@ class Basic extends React.Component {
                 </BasicOutsideDiv>
             )
         }
-
     }
 }
 
