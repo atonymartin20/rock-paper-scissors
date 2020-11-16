@@ -57,6 +57,10 @@ const RulesModalContainer = styled.div`
     position: fixed;
     top: 0;
     z-index: 10000000000;
+
+    @media(max-width: 375px) {
+        height: 100%;
+    }
 `;
 
 const RulesContainer = styled.div`
@@ -64,6 +68,14 @@ const RulesContainer = styled.div`
     border-radius: 10px;
     padding: 20px 28px;
     margin-bottom: 2px;
+
+    @media(max-width: 375px) {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
 `;
 
 const RulesTopBanner = styled.div`
@@ -78,17 +90,42 @@ const RulesTopBanner = styled.div`
     letter-spacing: 1.2px;
     margin-top: 3px;
     padding: 12px 3px 0 3px;
+
+    @media(max-width: 375px) {
+        justify-content: center;
+        margin-top: 19%;
+    }
 `;
 
 const RulesImg = styled.img`
     padding: 0px 20px;
     margin-top: 30px;
     margin-bottom: 10px;
+
+    @media(max-width: 375px) {
+        margin-top: 27.10%;
+        margin-right: 2px;
+        margin-bottom: 45%;
+    }
 `;
 
 const CloseIconImg = styled.img`
     width: 20px;
     height: 20px;
+
+    @media(max-width: 375px) {
+        display: none;
+    }
+`;
+
+const CloseIconImgMobile = styled.img`
+    width: 20px;
+    height: 20px;
+    display: none;
+
+    @media(max-width: 375px) {
+        display: block;
+    }
 `;
 
 export {
@@ -100,4 +137,5 @@ export {
     RulesTopBanner,
     RulesImg,
     CloseIconImg,
+    CloseIconImgMobile,
 }

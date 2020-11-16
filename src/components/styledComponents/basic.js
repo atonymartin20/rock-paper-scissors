@@ -826,6 +826,17 @@ const BasicStep3PlayerSide = styled.div`
 
     @media (max-width: 1150px) {
         align-items: center;
+        width: 50%;
+        flex-direction: column-reverse;
+    }
+
+    @media(max-width: 375px) {
+        width: 50%;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 7px;
+        height: 80%;
     }
 `;
 
@@ -853,8 +864,10 @@ const PlayerHeader2 = styled.div`
     @media(max-width: 375px) {
         font-size: 1.35rem;
         letter-spacing: 2.75px;
-        margin-left: 3px;
+        margin-left: 23px;
         margin-top: 25px;
+        height: auto;
+        margin-bottom: 17px;
     }
 `;
 
@@ -891,6 +904,11 @@ const BasicStep3MiddleHeader = styled.div`
     @media (max-width: 850px) {
         font-size: 5.37rem;
     }
+
+    @media (max-width: 375px) {
+        margin-top: -6px;
+        padding-left: 4px;
+    }
 `;
 
 const BasicStep3Button = styled.div`
@@ -919,6 +937,11 @@ const BasicStep3Button = styled.div`
     @media (max-width: 850px) {
         width: 220px;
     }
+
+    @media(max-width: 375px) {
+        margin-left: 4px;
+        margin-bottom: 25px;
+    }
 `;
 
 const BasicStep3ComputerSide = styled.div`
@@ -932,6 +955,15 @@ const BasicStep3ComputerSide = styled.div`
 
     @media (max-width: 1150px) {
         align-items: center;
+    }
+
+    @media(max-width: 375px) {
+        width: 50%;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding-right: 8px;
+        height: 80%;
     }
 `;
 
@@ -958,9 +990,11 @@ const ComputerHeader3 = styled.div`
 
     @media(max-width: 375px) {
         font-size: 1.35rem;
-        letter-spacing: 2.75px;
-        margin-left: 3px;
+        letter-spacing: 2.72px;
         margin-top: 25px;
+        margin-right: -7px;
+        height: auto;
+        margin-bottom: 17px;
     }
 `;
 
@@ -1012,6 +1046,17 @@ const WinningPaperDiv = styled.div`
         margin-top: 35px;
         box-shadow: 0 -12px #2945C2 inset,
         0 0 0 15px rgba(44,55,185,0.90);
+    }
+
+    @media(max-width: 375px) {
+        width: 130px;
+        height: 135px;
+        margin-top: 20px;
+        margin-left: 2px;
+        box-shadow: 0 -5px #2945C2 inset,
+        0 0 0 20px rgba(45,62,92,0.95),
+        0 0 0 45px rgba(41,58,88,.85),
+        0 -3px 0 77.5px rgba(34,53,85,.80);
     }
 `;
 
@@ -1065,6 +1110,17 @@ const WinningScissorsDiv = styled.div`
         box-shadow: 0 -12px #C76C1B inset,
         0 0 0 15px rgba(200,100,40,0.90);
     }
+
+    @media(max-width: 375px) {
+        width: 130px;
+        height: 135px;
+        margin-top: 20px;
+        margin-left: 2px;
+        box-shadow: 0 -5px #C76C1B inset,
+        0 0 0 20px rgba(45,62,92,0.95),
+        0 0 0 45px rgba(41,58,88,.85),
+        0 -3px 0 77.5px rgba(34,53,85,.80);
+    }
 `;
 
 const WinningRockDiv = styled.div`
@@ -1116,6 +1172,17 @@ const WinningRockDiv = styled.div`
         box-shadow: 0 -12px #9F1933 inset,
         0 0 0 15px rgba(175,20,40,0.90);
     }
+
+    @media(max-width: 375px) {
+        width: 130px;
+        height: 135px;
+        margin-top: 20px;
+        margin-left: 2px;
+        box-shadow: 0 -5px #9F1933 inset,
+        0 0 0 20px rgba(45,62,92,0.95),
+        0 0 0 45px rgba(41,58,88,.85),
+        0 -3px 0 77.5px rgba(34,53,85,.80);
+    }
 `;
 
 const LargePaperDiv2 = styled.div`
@@ -1150,6 +1217,14 @@ const LargePaperDiv2 = styled.div`
         height: 160px;
         margin-top: 35px;
     }
+
+    @media(max-width: 375px) {
+        width: 130px;
+        height: 135px;
+        margin-top: 20px;
+        margin-left: 2px;
+        box-shadow: 0 -5px #2945C2 inset;
+    }
 `;
 
 const LargePaperButton2 = styled.div`
@@ -1178,6 +1253,13 @@ const LargePaperButton2 = styled.div`
     @media(max-width: 450px) {
         width: 110px;
         height: 110px;
+    }
+
+    @media(max-width: 375px) {
+        width: 100px;
+        height: 100px;
+        box-shadow: 0 5px #BFC0CD inset;
+        margin-bottom: 5px;
     }
 
 `;
@@ -1214,6 +1296,14 @@ const LargeScissorsDiv2 = styled.div`
         height: 160px;
         margin-top: 35px;
     }
+
+    @media(max-width: 375px) {
+        width: 130px;
+        height: 135px;
+        margin-top: 30px;
+        margin-left: 2px;
+        box-shadow: 0 -5px #C76C1B inset;
+    }
 `;
 
 const LargeScissorsButton2 = styled.div`
@@ -1242,6 +1332,13 @@ const LargeScissorsButton2 = styled.div`
     @media(max-width: 450px) {
         width: 110px;
         height: 110px;
+    }
+
+    @media(max-width: 375px) {
+        width: 100px;
+        height: 100px;
+        box-shadow: 0 5px #BFC0CD inset;
+        margin-bottom: 5px;
     }
 `;
 
@@ -1277,6 +1374,14 @@ const LargeRockDiv2 = styled.div`
         height: 160px;
         margin-top: 35px;
     }
+
+    @media(max-width: 375px) {
+        width: 130px;
+        height: 135px;
+        margin-top: 20px;
+        margin-left: 2px;
+        box-shadow: 0 -5px #9F1933 inset;
+    }
 `;
 
 const LargeRockButton2 = styled.div`
@@ -1305,6 +1410,13 @@ const LargeRockButton2 = styled.div`
     @media(max-width: 450px) {
         width: 110px;
         height: 110px;
+    }
+
+    @media(max-width: 375px) {
+        width: 100px;
+        height: 100px;
+        box-shadow: 0 5px #BFC0CD inset;
+        margin-bottom: 5px;
     }
 `;
 
