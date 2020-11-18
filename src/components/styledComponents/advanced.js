@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import '../../index.css';
-import BackgroundTriangleImg from '../../images/bg-triangle.svg';
-import BackgroundTriangleMobileImg from '../../images/bg-triangle-mobile.svg';
+import BackgroundPentagonImg from '../../images/bg-pentagon.svg';
+import BackgroundPentagonMobileImg from '../../images/bg-pentagon-mobile.svg';
 import Cursor from '../../images/tap.svg';
 
-// Basic Index
-const BasicOutsideDiv = styled.div`
+// Advanced Index
+const AdvancedOutsideDiv = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
@@ -16,8 +16,8 @@ const BasicOutsideDiv = styled.div`
     overflow: hidden;
 `;
 
-// Basic Score Section
-const BasicScoreOutsideDiv = styled.div`
+// Advanced Score Section
+const AdvancedScoreOutsideDiv = styled.div`
     max-width: 703px;
     width: 100%;
     height: 152.5px;
@@ -40,21 +40,21 @@ const BasicScoreOutsideDiv = styled.div`
     }
 `;
 
-const BasicScoreTitle = styled.img`
+const AdvancedScoreTitle = styled.img`
     margin-left: 5.5px;
-    margin-top: 4px;
+    margin-top: 8px;
     z-index: 100;
     box-sizing: border-box;
 
     @media(max-width: 375px) {
         margin-left: 9.5px;
         height: 54%;
-        width: 29.8%;
+        width: 17.8%;
         margin-top: 3px;
     }
 `;
 
-const BasicScoreInsideDiv = styled.div`
+const AdvancedScoreInsideDiv = styled.div`
     background-color: white;
     width: 150px;
     height: 112px;
@@ -74,7 +74,7 @@ const BasicScoreInsideDiv = styled.div`
     }
 `;
 
-const BasicScoreInsideP = styled.p`
+const AdvancedScoreInsideP = styled.p`
     color: hsl(229, 64%, 46%);
     font-size: 1.55rem;
     font-weight: 600;
@@ -89,7 +89,7 @@ const BasicScoreInsideP = styled.p`
     }
 `;
 
-const BasicScoreInsideCounter = styled.p`
+const AdvancedScoreInsideCounter = styled.p`
     color: #5B596E;
     font-size: 6.35rem;
     font-weight: 700;
@@ -104,254 +104,388 @@ const BasicScoreInsideCounter = styled.p`
     }
 `;
 
-// Basic Step 0
-const BasicStep0Div = styled.div`
-    width: 700px;
+// Advanced Step 0
+const AdvancedStep0Div = styled.div`
+    width: 100%;
+    max-width: 700px;
     background-color: inherit;
-    background-image: url(${BackgroundTriangleImg});
+    background-image: url(${BackgroundPentagonImg});
     background-repeat: no-repeat;
     background-position: center;
-    margin-top: 90px;
-    height: 407px;
+    height: 480px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 38px;
+    padding-top: 15px;
 
+    @media(max-width: 500px) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
     @media(max-width: 375px) {
         width: 100%;
         max-width: 320px;
-        background-image: url(${BackgroundTriangleMobileImg});
-        margin-top: 96px;
+        background-image: url(${BackgroundPentagonMobileImg});
+        background-size:  64.5%;
+        margin-top: 10px;
     }
 `;
 
-const BasicRockImg = styled.img`
-    width: 67px;
-    height: 67px;    
-    margin-top: 12px;
-
-    @media(max-width: 500px) {
-        width: 52px;
-        height: 52px;
-    }
+const AdvancedRockImg = styled.img`
+    width: 48px;
+    height: 48px;    
+    margin-top: 8px;
+    margin-left: 2px;
 
     @media(max-width: 375px) {
-        width: 44px;
-        height: 44px;
+        width: 31px;
+        height: 32px;
         margin-top: 5px;
+        margin-left: 0px;
     }
 `;
 
-const BasicPaperImg = styled.img`
-    width: 70px;
-    height: 82px;    
-    margin-top: 10px;
+const AdvancedPaperImg = styled.img`
+    width: 50px;
+    height: 60px;    
+    margin-top: 6px;
     padding-right: 2px;
 
-    @media(max-width: 500px) {
-        width: 50px;
-        height: 65px;
-    }
-
     @media(max-width: 375px) {
-        width: 45px;
-        height: 50px;
-        margin-top: 5px;
+        width: 34px;
+        height: 40px;
     }
 `;
 
-const BasicScissorsImg = styled.img`
-    width: 68px;
-    height: 82px;    
-    margin-top: 10px;
+const AdvancedScissorsImg = styled.img`
+    width: 48px;
+    height: 62px;    
+    margin-top: 7px;
     margin-right: 8px;
 
-    @media(max-width: 500px) {
-        width: 50px;
-        height: 65px;
-    }
-
     @media(max-width: 375px) {
-        width: 47px;
-        height: 47px;
-        margin-top: 5px;
-        margin-right: 5px;
+        width: 34px;
+        height: 38px;
+        margin-top: 6px;
+        margin-right: 3.5px;
     }
 `;
 
-const BasicPaperScissorsDiv = styled.div`
-    margin-top: -27px;
+const AdvancedSpockImg = styled.img`
+    width: 45px;
+    height: 59px;    
+    margin-top: 6px;
+    margin-left: 5px;
+
+    @media(max-width: 375px) {
+        width: 30px;
+        height: 39px;
+        margin-top: 5px;
+    }
+`;
+
+const AdvancedLizardImg = styled.img`
+    width: 62px;
+    height: 62px;    
+    margin-top: 7px;
+    margin-right: 2px;
+
+    @media(max-width: 375px) {
+        width: 42px;
+        height: 40px;
+        margin-top: 3px;
+        margin-right: 1px;
+    }
+`;
+
+const AdvancedSpockPaperDiv = styled.div`
     display: flex;
     justify-content: center;
+    margin-top: -21px;
+    margin-bottom: 36px;
 
-    @media(max-width: 500px) {
-        margin-top: 7px;
+    @media(max-width: 375px) {
+        margin-top: -14px;
+        margin-bottom: 26px;
     }
+`;
 
+const AdvancedLizardRockDiv = styled.div`
+    display: flex;
+    justify-content: center;
 `;
 
 const PaperDiv = styled.div`
-    width: 199px;
-    height: 203px;
+    width: 145px;
+    height: 150px;
     border-radius: 50%;
     background-color: white;
     background-image: linear-gradient(hsl(230, 89%, 65%), hsl(230, 89%, 62%));
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 40px;
-    box-shadow: 0 -8px #2945C2 inset;
+    box-shadow: 0 -7px #2945C2 inset;
+    margin-left: 91px;
 
     @media(max-width: 500px) {
-        width: 150px;
-        height: 155px;
+        width: 125px;
+        height: 130px;
         box-shadow: 0 -5px #2945C2 inset;
+        margin-left: 80px;
     }
 
     @media(max-width: 375px) {
-        width: 130px;
-        height: 135px;
-        margin-right: 25px;
+        width: 95px;
+        height: 99px;
+        box-shadow: 0 -4.5px #2945C2 inset;
+        margin-left: 61px;
+        margin-right: 2px;
     }
 `;
 
 const PaperButton = styled.div`
-    width: 152px;
-    height: 152px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     background-color: #DBDBDB;
     border: none;
     background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
-    margin-bottom: 5px;
-    box-shadow: 0 8px #BFC0CD inset;
+    margin-bottom: 7px;
+    box-shadow: 0 6px #BFC0CD inset;
     display: flex;
     justify-content: center;
     align-items: center;
 
     @media(max-width: 500px) {
-        width: 110px;
-        height: 110px;
-        box-shadow: 0 5px #BFC0CD inset;
+        width: 95px;
+        height: 95px;
     }
 
     @media(max-width: 375px) {
-        width: 100px;
-        height: 100px;
+        width: 73px;
+        height: 73px;
+        box-shadow: 0 4px #BFC0CD inset;
     }
 `;
 
 const RockDiv = styled.div`
-    width: 199px;
-    height: 203px;
+    width: 145px;
+    height: 150px;
     border-radius: 50%;
     background-color: white;
     background-image: linear-gradient(hsl(349, 70%, 56%), hsl(349, 71%, 52%));
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
-    box-shadow: 0 -8px #9F1933 inset;
+    box-shadow: 0 -7px #9F1933 inset;
+    margin-left: 25px;
 
     @media(max-width: 500px) {
-        width: 150px;
-        height: 155px;
-        margin-top: 60px;
+        width: 125px;
+        height: 130px;
         box-shadow: 0 -5px #9F1933 inset;
     }
 
     @media(max-width: 375px) {
-        width: 130px;
-        height: 135px;
-        margin-top: 15px;
+        width: 95px;
+        height: 99px;
+        box-shadow: 0 -4.5px #9F1933 inset;
+        margin-left: 17px;
     }
 `;
 
 const RockButton = styled.div`
-    width: 152px;
-    height: 152px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     background-color: #DBDBDB;
     border: none;
     background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
-    margin-bottom: 5px;
-    box-shadow: 0 8px #BFC0CD inset;
+    margin-bottom: 7px;
+    box-shadow: 0 6px #BFC0CD inset;
     display: flex;
     justify-content: center;
     align-items: center;
 
     @media(max-width: 500px) {
-        width: 110px;
-        height: 110px;
-        box-shadow: 0 5px #BFC0CD inset;
+        width: 95px;
+        height: 95px;
     }
 
     @media(max-width: 375px) {
-        width: 100px;
-        height: 100px;
+        width: 73px;
+        height: 73px;
+        box-shadow: 0 4px #BFC0CD inset;
     }
 `;
 
 const ScissorsDiv = styled.div`
-    width: 199px;
-    height: 203px;
+    width: 145px;
+    height: 150px;
     border-radius: 50%;
     background-color: white;
     background-image: linear-gradient(hsl(40, 84%, 53%), hsl(39, 89%, 49%));
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 40px;
-    box-shadow: 0 -8px #C76C1B inset;
+    margin-top: -6px;
+    box-shadow: 0 -7px #C76C1B inset;
 
     @media(max-width: 500px) {
-        width: 150px;
-        height: 155px;
+        width: 125px;
+        height: 130px;
         box-shadow: 0 -5px #C76C1B inset;
     }
 
     @media(max-width: 375px) {
-        width: 130px;
-        height: 135px;
-        margin-left: 25px;
+        width: 95px;
+        height: 99px;
+        box-shadow: 0 -4.5px #C76C1B inset;
+        margin-top: 68px;
+        maring-left: 4px;
     }
 `;
 
 const ScissorsButton = styled.div`
-    width: 152px;
-    height: 152px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     background-color: #DBDBDB;
     border: none;
     background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
-    margin-bottom: 5px;
-    box-shadow: 0 8px #BFC0CD inset;
+    margin-bottom: 7px;
+    box-shadow: 0 6px #BFC0CD inset;
     display: flex;
     justify-content: center;
     align-items: center;
 
     @media(max-width: 500px) {
-        width: 110px;
-        height: 110px;
-        box-shadow: 0 5px #BFC0CD inset;
+        width: 95px;
+        height: 95px;
     }
 
     @media(max-width: 375px) {
-        width: 100px;
-        height: 100px;
+        width: 73px;
+        height: 73px;
+        box-shadow: 0 4px #BFC0CD inset;
     }
 `;
 
-// Basic Step 1
-const BasicStep1Div = styled.div`
+const SpockDiv = styled.div`
+    width: 145px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 91px;
+    box-shadow: 0 -7px #2D8CA8 inset;
+
+    @media(max-width: 500px) {
+        width: 125px;
+        height: 130px;
+        box-shadow: 0 -5px #2D8CA8 inset;
+    }
+
+    @media(max-width: 375px) {
+        width: 95px;
+        height: 99px;
+        box-shadow: 0 -4.5px #2D8CA8 inset;
+        margin-right: 59px;
+    }
+`;
+
+const SpockButton = styled.div`
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: #DBDBDB;
+    border: none;
+    background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
+    margin-bottom: 7px;
+    box-shadow: 0 6px #BFC0CD inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media(max-width: 500px) {
+        width: 95px;
+        height: 95px;
+    }
+
+    @media(max-width: 375px) {
+        width: 73px;
+        height: 73px;
+        box-shadow: 0 4px #BFC0CD inset;
+    }
+`;
+
+const LizardDiv = styled.div`
+    width: 145px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: linear-gradient(hsl(261, 72%, 63%), hsl(261, 73%, 60%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    box-shadow: 0 -7px #5E38A9 inset;
+
+    @media(max-width: 500px) {
+        width: 125px;
+        height: 130px;
+        box-shadow: 0 -5px #5E38A9 inset;
+    }
+
+    @media(max-width: 375px) {
+        width: 95px;
+        height: 99px;
+        box-shadow: 0 -4.5px #5E38A9 inset;
+        margin-right: 17px;
+    }
+`;
+
+const LizardButton = styled.div`
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: #DBDBDB;
+    border: none;
+    background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
+    margin-bottom: 7px;
+    box-shadow: 0 6px #BFC0CD inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media(max-width: 500px) {
+        width: 95px;
+        height: 95px;
+    }
+
+    @media(max-width: 375px) {
+        width: 73px;
+        height: 73px;
+        box-shadow: 0 4px #BFC0CD inset;
+
+    }
+`;
+
+// Advanced Step 1
+const AdvancedStep1Div = styled.div`
     width: 100%;
     max-width: 750px;
     background-color: inherit;
     margin-top: 75px;
-    height: 422px;
+    height: 444px;
     display: flex;
 `;
 
-const BasicStep1PlayerSide = styled.div`
+const AdvancedStep1PlayerSide = styled.div`
     width: 50%;
     height: 100%;
     display: flex;
@@ -366,7 +500,7 @@ const BasicStep1PlayerSide = styled.div`
     }
 `;
 
-const BasicStep1ComputerSide = styled.div`
+const AdvancedStep1ComputerSide = styled.div`
     width: 50%;
     height: 100%;
     display: flex;
@@ -425,20 +559,23 @@ const ComputerPlaceHolder = styled.div`
     background: linear-gradient(#192442 0%, #151E3D 100%);
     width: 227px;
     height: 227px;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-right: 13px;
+
+    @media(max-width: 700px) {
+        margin-top: 55px;
+    }
 
     @media (max-width: 525px) {
         width: 180px;
         height: 180px;
-        margin-top: 65px;
         margin-right: 0px;
     }
 
     @media(max-width: 425px) {
         width: 160px;
         height: 160px;
-        margin-top: 105px;
+        margin-top: 44px;
     }
 
     @media(max-width: 375px) {
@@ -458,7 +595,7 @@ const LargePaperDiv = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 68px;
+    margin-top: 38px;
     box-shadow: 0 -12px #2945C2 inset;
 
     @media (max-width: 700px) {
@@ -474,7 +611,7 @@ const LargePaperDiv = styled.div`
     @media(max-width: 425px) {
         width: 165px;
         height: 165px;
-        margin-top: 120px;
+        margin-top: 38px;
     }
 
     @media(max-width: 375px) {
@@ -530,7 +667,7 @@ const LargeScissorsDiv = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 68px;
+    margin-top: 38px;
     box-shadow: 0 -12px #C76C1B inset;
 
     @media (max-width: 700px) {
@@ -546,7 +683,7 @@ const LargeScissorsDiv = styled.div`
     @media(max-width: 425px) {
         width: 165px;
         height: 165px;
-        margin-top: 120px;
+        margin-top: 38px;
     }
 
     @media(max-width: 375px) {
@@ -602,7 +739,7 @@ const LargeRockDiv = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 68px;
+    margin-top: 38px;
     box-shadow: 0 -12px #9F1933 inset;
 
     @media (max-width: 700px) {
@@ -618,7 +755,7 @@ const LargeRockDiv = styled.div`
     @media(max-width: 425px) {
         width: 165px;
         height: 165px;
-        margin-top: 120px;
+        margin-top: 38px;
     }
 
     @media(max-width: 375px) {
@@ -665,6 +802,150 @@ const LargeRockButton = styled.div`
     }
 `;
 
+const LargeSpockDiv = styled.div`
+    width: 294px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 38px;
+    box-shadow: 0 -12px #2D8CA8 inset;
+
+    @media (max-width: 700px) {
+        width: 244px;
+        height: 250px;
+    }
+
+    @media (max-width: 525px) {
+        width: 200px;
+        height: 205px;
+    }
+
+    @media(max-width: 425px) {
+        width: 165px;
+        height: 165px;
+        margin-top: 38px;
+    }
+
+    @media(max-width: 375px) {
+        width: 130px;
+        height: 135px;
+        margin-top: 20px;
+        margin-left: 2px;
+        box-shadow: 0 -5px #2D8CA8 inset;
+    }
+`;
+
+const LargeSpockButton = styled.div`
+    width: 224px;
+    height: 226px;
+    border-radius: 50%;
+    background-color: #DBDBDB;
+    border: none;
+    background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
+    margin-bottom: 8px;
+    box-shadow: 0 12px #BFC0CD inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 700px) {
+        width: 174px;
+        height: 176px;
+    }
+
+    @media (max-width: 525px) {
+        width: 130px;
+        height: 132px;
+    }
+
+    @media(max-width: 425px) {
+        width: 115px;
+        height: 117px;
+    }
+
+    @media(max-width: 375px) {
+        width: 100px;
+        height: 100px;
+        box-shadow: 0 5px #BFC0CD inset;
+    }
+`;
+
+const LargeLizardDiv = styled.div`
+    width: 294px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: linear-gradient(hsl(261, 72%, 63%), hsl(261, 73%, 60%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 38px;
+    box-shadow: 0 -12px #5E38A9 inset;
+
+    @media (max-width: 700px) {
+        width: 244px;
+        height: 250px;
+    }
+
+    @media (max-width: 525px) {
+        width: 200px;
+        height: 205px;
+    }
+
+    @media(max-width: 425px) {
+        width: 165px;
+        height: 165px;
+        margin-top: 38px;
+    }
+
+    @media(max-width: 375px) {
+        width: 130px;
+        height: 135px;
+        margin-top: 20px;
+        margin-left: 2px;
+        box-shadow: 0 -5px #5E38A9 inset;
+    }
+`;
+
+const LargeLizardButton = styled.div`
+    width: 224px;
+    height: 226px;
+    border-radius: 50%;
+    background-color: #DBDBDB;
+    border: none;
+    background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
+    margin-bottom: 8px;
+    box-shadow: 0 12px #BFC0CD inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 700px) {
+        width: 174px;
+        height: 176px;
+    }
+
+    @media (max-width: 525px) {
+        width: 130px;
+        height: 132px;
+    }
+
+    @media(max-width: 425px) {
+        width: 115px;
+        height: 117px;
+    }
+
+    @media(max-width: 375px) {
+        width: 100px;
+        height: 100px;
+        box-shadow: 0 5px #BFC0CD inset;
+    }
+`;
+
 const LargeRockImg = styled.img`
     width: 97px;
     height: 96px;    
@@ -676,12 +957,12 @@ const LargeRockImg = styled.img`
         height: 80px;
     }
 
-    @media(max-width: 600px) {
+    @media(max-width: 525px) {
         width: 65px;
         height: 65px;
     }
 
-    @media(max-width: 450px) {
+    @media(max-width: 425px) {
         width: 50px;
         height: 50px;
     }
@@ -704,12 +985,12 @@ const LargePaperImg = styled.img`
         height: 94px;
     }
 
-    @media(max-width: 600px) {
+    @media(max-width: 525px) {
         width: 70px;
         height: 75px;
     }
 
-    @media(max-width: 450px) {
+    @media(max-width: 425px) {
         width: 55px;
         height: 60px;
     }
@@ -732,12 +1013,70 @@ const LargeScissorsImg = styled.img`
         height: 94px;
     }
 
-    @media(max-width: 600px) {
+    @media(max-width: 525px) {
         width: 70px;
         height: 75px;
     }
 
-    @media(max-width: 450px) {
+    @media(max-width: 425px) {
+        width: 55px;
+        height: 60px;
+    }
+
+    @media(max-width: 375px) {
+        width: 47px;
+        height: 47px;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+`;
+
+const LargeSpockImg = styled.img`
+    width: 103px;
+    height: 120px;    
+    margin-top: 13px;
+    margin-left: 17px;
+
+    @media (max-width: 700px) {
+        width: 85px;
+        height: 94px;
+    }
+
+    @media(max-width: 525px) {
+        width: 70px;
+        height: 75px;
+    }
+
+    @media(max-width: 425px) {
+        width: 55px;
+        height: 60px;
+    }
+
+    @media(max-width: 375px) {
+        width: 47px;
+        height: 47px;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+`;
+
+const LargeLizardImg = styled.img`
+    width: 103px;
+    height: 120px;    
+    margin-top: 13px;
+    margin-right: 15px;
+
+    @media (max-width: 700px) {
+        width: 85px;
+        height: 94px;
+    }
+
+    @media(max-width: 525px) {
+        width: 70px;
+        height: 75px;
+    }
+
+    @media(max-width: 425px) {
         width: 55px;
         height: 60px;
     }
@@ -751,7 +1090,7 @@ const LargeScissorsImg = styled.img`
 `;
 
 // Step 2
-const BasicStep2ComputerSide = styled.div`
+const AdvancedStep2ComputerSide = styled.div`
     width: 50%;
     height: 100%;
     display: flex;
@@ -779,7 +1118,7 @@ const ComputerHeader2 = styled.div`
     @media(max-width: 1000px) {
         text-align: center;
     }
-    
+
     @media(max-width: 375px) {
         font-size: 1.35rem;
         letter-spacing: 2.7px;
@@ -790,7 +1129,7 @@ const ComputerHeader2 = styled.div`
 `;
 
 // Step 3
-const BasicStep3ContianerDiv = styled.div`
+const AdvancedStep3ContianerDiv = styled.div`
     width: 100%;
     max-width: 1366px;
     display: flex;
@@ -802,7 +1141,7 @@ const BasicStep3ContianerDiv = styled.div`
     }
 `;
 
-const BasicStep3AlternativeMiddleDiv = styled.div`
+const AdvancedStep3AlternativeMiddleDiv = styled.div`
     width: 100%;
     display: none;
 
@@ -813,12 +1152,12 @@ const BasicStep3AlternativeMiddleDiv = styled.div`
     }
 `;
 
-const BasicStep3Div = styled.div`
+const AdvancedStep3Div = styled.div`
     width: 100%;
     max-width: 950px;
     background-color: inherit;
     margin-top: 75px;
-    height: 422px;
+    height: 444px;
     display: flex;
     margin-right: 10px;
 
@@ -830,7 +1169,7 @@ const BasicStep3Div = styled.div`
     }
 `;
 
-const BasicStep3PlayerSide = styled.div`
+const AdvancedStep3PlayerSide = styled.div`
     width: 40%;
     height: 100%;
     display: flex;
@@ -884,7 +1223,7 @@ const PlayerHeader2 = styled.div`
     }
 `;
 
-const BasicStep3MiddleDiv = styled.div`
+const AdvancedStep3MiddleDiv = styled.div`
     width: 280px;
     height: 100%;
     display: flex;
@@ -894,7 +1233,8 @@ const BasicStep3MiddleDiv = styled.div`
     padding-top: 5px;
     padding-left: 11.5px;
     z-index: 100;
-    
+    padding-bottom: 22px;
+
     @media (max-width: 1150px) {
         width: 180px;
     }
@@ -904,7 +1244,7 @@ const BasicStep3MiddleDiv = styled.div`
     }
 `;
 
-const BasicStep3MiddleHeader = styled.div`
+const AdvancedStep3MiddleHeader = styled.div`
     font-size: 5.37rem;
     color: white;
     letter-spacing: 1.7px;
@@ -925,7 +1265,7 @@ const BasicStep3MiddleHeader = styled.div`
     }
 `;
 
-const BasicStep3Button = styled.div`
+const AdvancedStep3Button = styled.div`
     width: 220px;
     height: 48px;
     border-radius: 8px;
@@ -958,7 +1298,7 @@ const BasicStep3Button = styled.div`
     }
 `;
 
-const BasicStep3ComputerSide = styled.div`
+const AdvancedStep3ComputerSide = styled.div`
     width: 40%;
     height: 100%;
     display: flex;
@@ -969,6 +1309,7 @@ const BasicStep3ComputerSide = styled.div`
 
     @media (max-width: 1150px) {
         align-items: center;
+        width: 50%;
     }
 
     @media(max-width: 375px) {
@@ -1194,6 +1535,130 @@ const WinningRockDiv = styled.div`
         margin-top: 20px;
         margin-left: 2px;
         box-shadow: 0 -5px #9F1933 inset,
+        0 0 0 20px rgba(45,62,92,0.95),
+        0 0 0 45px rgba(41,58,88,.85),
+        0 -3px 0 77.5px rgba(34,53,85,.80);
+    }
+`;
+
+const WinningSpockDiv = styled.div`
+    width: 294px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 68px;
+    box-shadow: 0 -12px #2D8CA8 inset,
+    0 0 0 65px rgba(44,55,85,0.65),
+    0 0 0 135px rgba(36,49,81,0.80),
+    0 -3px 0 212.5px rgba(36,49,81,0.50);
+
+    @media (max-width: 1350px) {
+        box-shadow: 0 -12px #2D8CA8 inset,
+        0 0 0 35px rgba(44,55,85,0.65),
+        0 0 0 70px rgba(36,49,81,0.80),
+        0 -3px 0 115px rgba(36,49,81,0.50);
+    }
+
+    @media (max-width: 1150px) {
+        box-shadow: 0 -12px #2D8CA8 inset,
+        0 0 0 35px rgba(44,55,85,0.65),
+        0 0 0 70px rgba(36,49,81,0.80);
+        width: 244px;
+        height: 250px;
+    }
+
+    @media (max-width: 850px) {
+        margin-top: 15px;
+        box-shadow: 0 -12px #2D8CA8 inset,
+        0 0 0 25px rgba(44,55,85,0.65),
+        0 0 0 50px rgba(36,49,81,0.85);
+    }
+
+    @media(max-width: 600px) {
+        width: 194px;
+        height: 200px;
+    }
+
+    @media(max-width: 450px) {
+        width: 154px;
+        height: 160px;
+        margin-top: 35px;
+        box-shadow: 0 -12px #2D8CA8 inset,
+        0 0 0 15px rgba(11,171,212,0.95);
+    }
+
+    @media(max-width: 375px) {
+        width: 130px;
+        height: 135px;
+        margin-top: 20px;
+        margin-left: 2px;
+        box-shadow: 0 -5px #2D8CA8 inset,
+        0 0 0 20px rgba(45,62,92,0.95),
+        0 0 0 45px rgba(41,58,88,.85),
+        0 -3px 0 77.5px rgba(34,53,85,.80);
+    }
+`;
+
+const WinningLizardDiv = styled.div`
+    width: 294px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: linear-gradient(hsl(261, 72%, 63%), hsl(261, 73%, 60%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 68px;
+    box-shadow: 0 -12px #5E38A9 inset,
+    0 0 0 65px rgba(44,55,85,0.65),
+    0 0 0 135px rgba(36,49,81,0.80),
+    0 -3px 0 212.5px rgba(36,49,81,0.50);
+
+    @media (max-width: 1350px) {
+        box-shadow: 0 -12px #5E38A9 inset,
+        0 0 0 35px rgba(44,55,85,0.65),
+        0 0 0 70px rgba(36,49,81,0.80),
+        0 -3px 0 115px rgba(36,49,81,0.50);
+    }
+
+    @media (max-width: 1150px) {
+        box-shadow: 0 -12px #5E38A9 inset,
+        0 0 0 35px rgba(44,55,85,0.65),
+        0 0 0 70px rgba(36,49,81,0.80);
+        width: 244px;
+        height: 250px;
+    }
+
+    @media (max-width: 850px) {
+        margin-top: 15px;
+        box-shadow: 0 -12px #5E38A9 inset,
+        0 0 0 25px rgba(44,55,85,0.65),
+        0 0 0 50px rgba(36,49,81,0.85);
+    }
+
+    @media(max-width: 600px) {
+        width: 194px;
+        height: 200px;
+    }
+
+    @media(max-width: 450px) {
+        width: 154px;
+        height: 160px;
+        margin-top: 35px;
+        box-shadow: 0 -12px #5E38A9 inset,
+        0 0 0 15px rgba(89,0,255,0.90);
+    }
+
+    @media(max-width: 375px) {
+        width: 130px;
+        height: 135px;
+        margin-top: 20px;
+        margin-left: 2px;
+        box-shadow: 0 -5px #5E38A9 inset,
         0 0 0 20px rgba(45,62,92,0.95),
         0 0 0 45px rgba(41,58,88,.85),
         0 -3px 0 77.5px rgba(34,53,85,.80);
@@ -1443,27 +1908,350 @@ const LargeRockButton2 = styled.div`
     }
 `;
 
+const LargeSpockDiv2 = styled.div`
+    width: 294px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 68px;
+    box-shadow: 0 -12px #2D8CA8 inset;
+    z-index: 100;
+
+    @media (max-width: 1150px) {
+        width: 244px;
+        height: 250px;
+    }
+
+    @media (max-width: 850px) {
+        margin-top: 15px;
+    }
+
+    @media(max-width: 600px) {
+        width: 194px;
+        height: 200px;
+    }
+
+    @media(max-width: 450px) {
+        width: 154px;
+        height: 160px;
+        margin-top: 35px;
+    }
+
+    @media(max-width: 375px) {
+        width: 130px;
+        height: 135px;
+        margin-top: 20px;
+        margin-left: 2px;
+        box-shadow: 0 -5px #2D8CA8 inset;
+    }
+`;
+
+const LargeSpockButton2 = styled.div`
+    width: 224px;
+    height: 226px;
+    border-radius: 50%;
+    background-color: #DBDBDB;
+    border: none;
+    background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
+    margin-bottom: 8px;
+    box-shadow: 0 12px #BFC0CD inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1150px) {
+        width: 174px;
+        height: 176px;
+        box-shadow: 0 10px #BFC0CD inset;
+    }
+
+    @media(max-width: 600px) {
+        width: 134px;
+        height: 136px;
+        box-shadow: 0 8px #BFC0CD inset;
+    }
+
+    @media(max-width: 450px) {
+        width: 110px;
+        height: 110px;
+        box-shadow: 0 7px #BFC0CD inset;
+    }
+
+    @media(max-width: 375px) {
+        width: 100px;
+        height: 100px;
+        box-shadow: 0 5px #BFC0CD inset;
+        margin-bottom: 5px;
+    }
+`;
+
+const LargeLizardDiv2 = styled.div`
+    width: 294px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: linear-gradient(hsl(261, 72%, 63%), hsl(261, 73%, 60%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 68px;
+    box-shadow: 0 -12px #5E38A9 inset;
+    z-index: 100;
+
+    @media (max-width: 1150px) {
+        width: 244px;
+        height: 250px;
+    }
+
+    @media (max-width: 850px) {
+        margin-top: 15px;
+    }
+
+    @media(max-width: 600px) {
+        width: 194px;
+        height: 200px;
+    }
+
+    @media(max-width: 450px) {
+        width: 154px;
+        height: 160px;
+        margin-top: 35px;
+    }
+
+    @media(max-width: 375px) {
+        width: 130px;
+        height: 135px;
+        margin-top: 20px;
+        margin-left: 2px;
+        box-shadow: 0 -5px #5E38A9 inset;
+    }
+`;
+
+const LargeLizardButton2 = styled.div`
+    width: 224px;
+    height: 226px;
+    border-radius: 50%;
+    background-color: #DBDBDB;
+    border: none;
+    background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
+    margin-bottom: 8px;
+    box-shadow: 0 12px #BFC0CD inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1150px) {
+        width: 174px;
+        height: 176px;
+        box-shadow: 0 10px #BFC0CD inset;
+    }
+
+    @media(max-width: 600px) {
+        width: 134px;
+        height: 136px;
+        box-shadow: 0 8px #BFC0CD inset;
+    }
+
+    @media(max-width: 450px) {
+        width: 110px;
+        height: 110px;
+        box-shadow: 0 7px #BFC0CD inset;
+    }
+
+    @media(max-width: 375px) {
+        width: 100px;
+        height: 100px;
+        box-shadow: 0 5px #BFC0CD inset;
+        margin-bottom: 5px;
+    }
+`;
+
+const LargeRockImg2 = styled.img`
+    width: 97px;
+    height: 96px;    
+    margin-top: 16px;
+    margin-left: 3px;
+
+    @media(max-width: 1150px) {
+        width: 80px;
+        height: 80px;
+        margin-left: 0px;
+    }
+
+    @media(max-width: 600px) {
+        width: 65px;
+        height: 65px;
+    }
+
+    @media(max-width: 450px) {
+        width: 50px;
+        height: 50px;
+    }
+
+    @media(max-width: 375px) {
+        width: 43px;
+        height: 43px;
+        margin-top: 9px;
+    }
+`;
+
+const LargePaperImg2 = styled.img`
+    width: 100px;
+    height: 118px;    
+    margin-top: 15px;
+    margin-right: 5px;
+
+    @media(max-width: 1150px) {
+        width: 85px;
+        height: 94px;
+        margin-top: 12px;
+        margin-right: 4px;
+    }
+
+    @media(max-width: 600px) {
+        width: 70px;
+        height: 75px;
+        margin-top: 8px;
+        margin-right: 1px;
+    }
+
+    @media(max-width: 450px) {
+        width: 55px;
+        height: 60px;
+    }
+
+    @media(max-width: 375px) {
+        width: 45px;
+        height: 50px;
+        margin-top: 5px;
+    }
+`;
+
+const LargeScissorsImg2 = styled.img`
+    width: 103px;
+    height: 120px;    
+    margin-top: 13px;
+    margin-right: 15px;
+
+    @media(max-width: 1150px) {
+        width: 85px;
+        height: 94px;
+        margin-right: 5px;
+    }
+
+    @media(max-width: 600px) {
+        width: 70px;
+        height: 75px;
+        margin-right: 2px;
+        margin-top: 10px;
+    }
+
+    @media(max-width: 450px) {
+        width: 55px;
+        height: 60px;
+    }
+
+    @media(max-width: 375px) {
+        width: 47px;
+        height: 47px;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+`;
+
+const LargeSpockImg2 = styled.img`
+    width: 103px;
+    height: 120px;    
+    margin-top: 13px;
+    margin-left: 17px;
+
+    @media(max-width: 1150px) {
+        width: 85px;
+        height: 94px;
+    }
+
+    @media (max-width: 600px) {
+        width: 70px;
+        height: 75px;
+    }
+
+    @media(max-width: 450px) {
+        width: 55px;
+        height: 60px;
+        margin-left: 10px;
+    }
+
+    @media(max-width: 375px) {
+        width: 47px;
+        height: 47px;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+`;
+
+const LargeLizardImg2 = styled.img`
+    width: 103px;
+    height: 120px;    
+    margin-top: 13px;
+    margin-right: 15px;
+
+    @media(max-width: 1150px) {
+        width: 85px;
+        height: 94px;
+        margin-right: 4px;
+        margin-top: 6px;
+    }
+
+    @media (max-width: 600px) {
+        width: 75px;
+        height: 75px;
+    }
+
+    @media(max-width: 450px) {
+        width: 55px;
+        height: 60px;
+    }
+
+    @media(max-width: 375px) {
+        width: 47px;
+        height: 47px;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+`;
+
 export {
-    BasicOutsideDiv,
-    BasicScoreOutsideDiv,
-    BasicScoreTitle,
-    BasicScoreInsideDiv,
-    BasicScoreInsideP,
-    BasicScoreInsideCounter,
-    BasicStep0Div,
-    BasicRockImg,
-    BasicScissorsImg,
-    BasicPaperImg,
-    BasicPaperScissorsDiv,
+    AdvancedOutsideDiv,
+    AdvancedScoreOutsideDiv,
+    AdvancedScoreTitle,
+    AdvancedScoreInsideDiv,
+    AdvancedScoreInsideP,
+    AdvancedScoreInsideCounter,
+    AdvancedStep0Div,
+    AdvancedRockImg,
+    AdvancedScissorsImg,
+    AdvancedPaperImg,
+    AdvancedSpockImg,
+    AdvancedLizardImg,
+    AdvancedSpockPaperDiv,
+    AdvancedLizardRockDiv,
     PaperDiv,
     PaperButton,
     RockDiv,
     RockButton,
     ScissorsDiv,
     ScissorsButton,
-    BasicStep1Div,
-    BasicStep1PlayerSide,
-    BasicStep1ComputerSide,
+    SpockDiv,
+    SpockButton,
+    LizardDiv,
+    LizardButton,
+    AdvancedStep1Div,
+    AdvancedStep1PlayerSide,
+    AdvancedStep1ComputerSide,
     PlayerHeader,
     ComputerHeader,
     ComputerPlaceHolder,
@@ -1473,28 +2261,45 @@ export {
     LargeScissorsButton,
     LargeRockDiv,
     LargeRockButton,
+    LargeSpockDiv,
+    LargeSpockButton,
+    LargeLizardDiv,
+    LargeLizardButton,
     LargeRockImg,
     LargeScissorsImg,
     LargePaperImg,
-    BasicStep2ComputerSide,
+    LargeSpockImg,
+    LargeLizardImg,
+    AdvancedStep2ComputerSide,
     ComputerHeader2,
-    BasicStep3ContianerDiv,
-    BasicStep3AlternativeMiddleDiv,
-    BasicStep3Div,
-    BasicStep3PlayerSide,
+    AdvancedStep3ContianerDiv,
+    AdvancedStep3AlternativeMiddleDiv,
+    AdvancedStep3Div,
+    AdvancedStep3PlayerSide,
     PlayerHeader2,
-    BasicStep3MiddleDiv,
-    BasicStep3MiddleHeader,
-    BasicStep3Button,
-    BasicStep3ComputerSide,
+    AdvancedStep3MiddleDiv,
+    AdvancedStep3MiddleHeader,
+    AdvancedStep3Button,
+    AdvancedStep3ComputerSide,
     ComputerHeader3,
     WinningPaperDiv,
     WinningRockDiv,
     WinningScissorsDiv,
+    WinningSpockDiv,
+    WinningLizardDiv,
     LargePaperDiv2,
     LargePaperButton2,
     LargeScissorsDiv2,
     LargeScissorsButton2,
     LargeRockDiv2,
     LargeRockButton2,
+    LargeSpockDiv2,
+    LargeSpockButton2,
+    LargeLizardDiv2,
+    LargeLizardButton2,
+    LargeRockImg2,
+    LargeScissorsImg2,
+    LargePaperImg2,
+    LargeSpockImg2,
+    LargeLizardImg2,
 }
