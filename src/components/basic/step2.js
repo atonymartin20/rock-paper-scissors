@@ -16,7 +16,7 @@ class Step2 extends React.Component {
                             </PlayerHeader>
                             <LargeRockDiv>
                                 <LargeRockButton>
-                                    <LargeRockImg src={RockImg} alt='Paper Icon' />
+                                    <LargeRockImg src={RockImg} alt='Rock Icon' />
                                 </LargeRockButton>
                             </LargeRockDiv>
                         </BasicStep1PlayerSide>
@@ -27,7 +27,7 @@ class Step2 extends React.Component {
                             </ComputerHeader2>
                             <LargeRockDiv>
                                 <LargeRockButton>
-                                    <LargeRockImg src={RockImg} alt='Paper Icon' />
+                                    <LargeRockImg src={RockImg} alt='Rock Icon' />
                                 </LargeRockButton>
                             </LargeRockDiv>
                         </BasicStep2ComputerSide>
@@ -44,7 +44,7 @@ class Step2 extends React.Component {
                             </PlayerHeader>
                             <LargeRockDiv>
                                 <LargeRockButton>
-                                    <LargeRockImg src={RockImg} alt='Paper Icon' />
+                                    <LargeRockImg src={RockImg} alt='Rock Icon' />
                                 </LargeRockButton>
                             </LargeRockDiv>
                         </BasicStep1PlayerSide>
@@ -72,7 +72,7 @@ class Step2 extends React.Component {
                             </PlayerHeader>
                             <LargeRockDiv>
                                 <LargeRockButton>
-                                    <LargeRockImg src={RockImg} alt='Paper Icon' />
+                                    <LargeRockImg src={RockImg} alt='Rock Icon' />
                                 </LargeRockButton>
                             </LargeRockDiv>
                         </BasicStep1PlayerSide>
@@ -83,7 +83,7 @@ class Step2 extends React.Component {
                             </ComputerHeader2>
                             <LargeScissorsDiv>
                                 <LargeScissorsButton>
-                                    <LargeScissorsImg src={ScissorsImg} alt='Paper Icon' />
+                                    <LargeScissorsImg src={ScissorsImg} alt='Scissors Icon' />
                                 </LargeScissorsButton>
                             </LargeScissorsDiv>
                         </BasicStep2ComputerSide>
@@ -113,7 +113,7 @@ class Step2 extends React.Component {
                             </ComputerHeader2>
                             <LargeRockDiv>
                                 <LargeRockButton>
-                                    <LargeRockImg src={RockImg} alt='Paper Icon' />
+                                    <LargeRockImg src={RockImg} alt='Rock Icon' />
                                 </LargeRockButton>
                             </LargeRockDiv>
                         </BasicStep2ComputerSide>
@@ -168,7 +168,7 @@ class Step2 extends React.Component {
                             </ComputerHeader2>
                             <LargeScissorsDiv>
                                 <LargeScissorsButton>
-                                    <LargeScissorsImg src={ScissorsImg} alt='Paper Icon' />
+                                    <LargeScissorsImg src={ScissorsImg} alt='Scissors Icon' />
                                 </LargeScissorsButton>
                             </LargeScissorsDiv>
                         </BasicStep2ComputerSide>
@@ -187,7 +187,7 @@ class Step2 extends React.Component {
                             </PlayerHeader>
                             <LargeScissorsDiv>
                                 <LargeScissorsButton>
-                                    <LargeScissorsImg src={ScissorsImg} alt='Paper Icon' />
+                                    <LargeScissorsImg src={ScissorsImg} alt='Scissors Icon' />
                                 </LargeScissorsButton>
                             </LargeScissorsDiv>
                         </BasicStep1PlayerSide>
@@ -198,7 +198,7 @@ class Step2 extends React.Component {
                             </ComputerHeader2>
                             <LargeRockDiv>
                                 <LargeRockButton>
-                                    <LargeRockImg src={RockImg} alt='Paper Icon' />
+                                    <LargeRockImg src={RockImg} alt='Rock Icon' />
                                 </LargeRockButton>
                             </LargeRockDiv>
                         </BasicStep2ComputerSide>
@@ -215,7 +215,7 @@ class Step2 extends React.Component {
                             </PlayerHeader>
                             <LargeScissorsDiv>
                                 <LargeScissorsButton>
-                                    <LargeScissorsImg src={ScissorsImg} alt='Paper Icon' />
+                                    <LargeScissorsImg src={ScissorsImg} alt='Scissors Icon' />
                                 </LargeScissorsButton>
                             </LargeScissorsDiv>
                         </BasicStep1PlayerSide>
@@ -243,7 +243,7 @@ class Step2 extends React.Component {
                             </PlayerHeader>
                             <LargeScissorsDiv>
                                 <LargeScissorsButton>
-                                    <LargeScissorsImg src={ScissorsImg} alt='Paper Icon' />
+                                    <LargeScissorsImg src={ScissorsImg} alt='Scissors Icon' />
                                 </LargeScissorsButton>
                             </LargeScissorsDiv>
                         </BasicStep1PlayerSide>
@@ -254,7 +254,7 @@ class Step2 extends React.Component {
                             </ComputerHeader2>
                             <LargeScissorsDiv>
                                 <LargeScissorsButton>
-                                    <LargeScissorsImg src={ScissorsImg} alt='Paper Icon' />
+                                    <LargeScissorsImg src={ScissorsImg} alt='Scissors Icon' />
                                 </LargeScissorsButton>
                             </LargeScissorsDiv>
                         </BasicStep2ComputerSide>
