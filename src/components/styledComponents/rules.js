@@ -170,6 +170,10 @@ const AdvancedRulesBottomDiv = styled.div`
     justify-content: space-between;
     padding: 0px 32px;
 
+    @media(max-width: 635px) {
+        margin-top: 0px;
+    }
+
     @media(max-width: 375px) {
         flex-direction: column-reverse;
         justify-content: flex-end;
