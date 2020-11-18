@@ -192,7 +192,7 @@ const BasicPaperScissorsDiv = styled.div`
 
 const PaperDiv = styled.div`
     width: 199px;
-    height: 190px;
+    height: 203px;
     border-radius: 50%;
     background-color: white;
     background-image: linear-gradient(hsl(230, 89%, 65%), hsl(230, 89%, 62%));
@@ -200,11 +200,12 @@ const PaperDiv = styled.div`
     justify-content: center;
     align-items: center;
     margin-right: 40px;
-    box-shadow: 0 -5px #2945C2 inset;
+    box-shadow: 0 -8px #2945C2 inset;
 
     @media(max-width: 500px) {
         width: 150px;
         height: 155px;
+        box-shadow: 0 -5px #2945C2 inset;
     }
 
     @media(max-width: 375px) {
@@ -222,7 +223,7 @@ const PaperButton = styled.div`
     border: none;
     background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
     margin-bottom: 5px;
-    box-shadow: 0 5px #BFC0CD inset;
+    box-shadow: 0 8px #BFC0CD inset;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,6 +231,7 @@ const PaperButton = styled.div`
     @media(max-width: 500px) {
         width: 110px;
         height: 110px;
+        box-shadow: 0 5px #BFC0CD inset;
     }
 
     @media(max-width: 375px) {
@@ -240,7 +242,7 @@ const PaperButton = styled.div`
 
 const RockDiv = styled.div`
     width: 199px;
-    height: 190px;
+    height: 203px;
     border-radius: 50%;
     background-color: white;
     background-image: linear-gradient(hsl(349, 70%, 56%), hsl(349, 71%, 52%));
@@ -248,12 +250,13 @@ const RockDiv = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 25px;
-    box-shadow: 0 -5px #9F1933 inset;
+    box-shadow: 0 -8px #9F1933 inset;
 
     @media(max-width: 500px) {
         width: 150px;
         height: 155px;
         margin-top: 60px;
+        box-shadow: 0 -5px #9F1933 inset;
     }
 
     @media(max-width: 375px) {
@@ -271,7 +274,7 @@ const RockButton = styled.div`
     border: none;
     background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
     margin-bottom: 5px;
-    box-shadow: 0 5px #BFC0CD inset;
+    box-shadow: 0 8px #BFC0CD inset;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,6 +282,7 @@ const RockButton = styled.div`
     @media(max-width: 500px) {
         width: 110px;
         height: 110px;
+        box-shadow: 0 5px #BFC0CD inset;
     }
 
     @media(max-width: 375px) {
@@ -289,7 +293,7 @@ const RockButton = styled.div`
 
 const ScissorsDiv = styled.div`
     width: 199px;
-    height: 190px;
+    height: 203px;
     border-radius: 50%;
     background-color: white;
     background-image: linear-gradient(hsl(40, 84%, 53%), hsl(39, 89%, 49%));
@@ -297,11 +301,12 @@ const ScissorsDiv = styled.div`
     justify-content: center;
     align-items: center;
     margin-left: 40px;
-    box-shadow: 0 -5px #C76C1B inset;
+    box-shadow: 0 -8px #C76C1B inset;
 
     @media(max-width: 500px) {
         width: 150px;
         height: 155px;
+        box-shadow: 0 -5px #C76C1B inset;
     }
 
     @media(max-width: 375px) {
@@ -319,7 +324,7 @@ const ScissorsButton = styled.div`
     border: none;
     background-image: linear-gradient(hsl(0, 0%, 94%), hsl(0, 0%, 86%));
     margin-bottom: 5px;
-    box-shadow: 0 5px #BFC0CD inset;
+    box-shadow: 0 8px #BFC0CD inset;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,6 +332,7 @@ const ScissorsButton = styled.div`
     @media(max-width: 500px) {
         width: 110px;
         height: 110px;
+        box-shadow: 0 5px #BFC0CD inset;
     }
 
     @media(max-width: 375px) {
@@ -827,7 +833,6 @@ const BasicStep3PlayerSide = styled.div`
     @media (max-width: 1150px) {
         align-items: center;
         width: 50%;
-        flex-direction: column-reverse;
     }
 
     @media(max-width: 375px) {
