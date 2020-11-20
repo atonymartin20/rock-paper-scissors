@@ -48,7 +48,7 @@ class Step3 extends React.Component {
 									<LargeRockButton2>
 										<LargeRockImg
 											src={RockImg}
-											alt="Paper Icon"
+											alt="Rock Icon"
 										/>
 									</LargeRockButton2>
 								</LargeRockDiv2>
@@ -73,7 +73,7 @@ class Step3 extends React.Component {
 									<LargeRockButton2>
 										<LargeRockImg
 											src={RockImg}
-											alt="Paper Icon"
+											alt="Rock Icon"
 										/>
 									</LargeRockButton2>
 								</LargeRockDiv2>
@@ -100,7 +100,7 @@ class Step3 extends React.Component {
 									<LargeRockButton2>
 										<LargeRockImg
 											src={RockImg}
-											alt="Paper Icon"
+											alt="Rock Icon"
 										/>
 									</LargeRockButton2>
 								</LargeRockDiv2>
@@ -152,7 +152,7 @@ class Step3 extends React.Component {
 									<LargeRockButton2>
 										<LargeRockImg
 											src={RockImg}
-											alt="Paper Icon"
+											alt="Rock Icon"
 										/>
 									</LargeRockButton2>
 								</WinningRockDiv>
@@ -177,7 +177,7 @@ class Step3 extends React.Component {
 									<LargeScissorsButton2>
 										<LargeScissorsImg
 											src={ScissorsImg}
-											alt="Paper Icon"
+											alt="Scissors Icon"
 										/>
 									</LargeScissorsButton2>
 								</LargeScissorsDiv2>
@@ -230,7 +230,7 @@ class Step3 extends React.Component {
 									<LargeRockButton2>
 										<LargeRockImg
 											src={RockImg}
-											alt="Paper Icon"
+											alt="Rock Icon"
 										/>
 									</LargeRockButton2>
 								</LargeRockDiv2>
@@ -332,7 +332,7 @@ class Step3 extends React.Component {
 									<LargeScissorsButton2>
 										<LargeScissorsImg
 											src={ScissorsImg}
-											alt="Paper Icon"
+											alt="Scissors Icon"
 										/>
 									</LargeScissorsButton2>
 								</WinningScissorsDiv>
@@ -360,7 +360,7 @@ class Step3 extends React.Component {
 									<LargeScissorsButton2>
 										<LargeScissorsImg
 											src={ScissorsImg}
-											alt="Paper Icon"
+											alt="Scissors Icon"
 										/>
 									</LargeScissorsButton2>
 								</LargeScissorsDiv2>
@@ -385,7 +385,7 @@ class Step3 extends React.Component {
 									<LargeRockButton2>
 										<LargeRockImg
 											src={RockImg}
-											alt="Paper Icon"
+											alt="Rock Icon"
 										/>
 									</LargeRockButton2>
 								</WinningRockDiv>
@@ -411,7 +411,7 @@ class Step3 extends React.Component {
 									<LargeScissorsButton2>
 										<LargeScissorsImg
 											src={ScissorsImg}
-											alt="Paper Icon"
+											alt="Scissors Icon"
 										/>
 									</LargeScissorsButton2>
 								</WinningScissorsDiv>
@@ -462,7 +462,7 @@ class Step3 extends React.Component {
 									<LargeScissorsButton2>
 										<LargeScissorsImg
 											src={ScissorsImg}
-											alt="Paper Icon"
+											alt="Scissors Icon"
 										/>
 									</LargeScissorsButton2>
 								</LargeScissorsDiv2>
@@ -487,7 +487,7 @@ class Step3 extends React.Component {
 									<LargeScissorsButton2>
 										<LargeScissorsImg
 											src={ScissorsImg}
-											alt="Paper Icon"
+											alt="Scissors Icon"
 										/>
 									</LargeScissorsButton2>
 								</LargeScissorsDiv2>

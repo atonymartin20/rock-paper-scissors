@@ -15,7 +15,7 @@ class Step1 extends React.Component {
                         </PlayerHeader>
                         <LargeRockDiv>
                             <LargeRockButton>
-                                <LargeRockImg src={RockImg} alt='Paper Icon' />
+                                <LargeRockImg src={RockImg} alt='Rock Icon' />
                             </LargeRockButton>
                         </LargeRockDiv>
                     </BasicStep1PlayerSide>
@@ -63,7 +63,7 @@ class Step1 extends React.Component {
                         </PlayerHeader>
                         <LargeScissorsDiv>
                             <LargeScissorsButton>
-                                <LargeScissorsImg src={ScissorsImg} alt='Paper Icon' />
+                                <LargeScissorsImg src={ScissorsImg} alt='Scissors Icon' />
                             </LargeScissorsButton>
                         </LargeScissorsDiv>
                     </BasicStep1PlayerSide>

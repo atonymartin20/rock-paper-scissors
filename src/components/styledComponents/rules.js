@@ -128,6 +128,60 @@ const CloseIconImgMobile = styled.img`
     }
 `;
 
+const AdvancedRulesTopBanner = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3.0rem;
+    font-family: 'Barlow Semi Condensed', serif;
+    color: hsl(229, 25%, 31%);
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    margin-top: 3px;
+    padding: 12px 3px 0 3px;
+
+    @media(max-width: 375px) {
+        justify-content: center;
+        margin-top: 20.5%;
+    }
+`;
+
+const AdvancedRulesImg = styled.img`
+    padding: 0px 15px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    @media(max-width: 375px) {
+        margin-top: 24.10%;
+        margin-left: 2px;
+        margin-bottom: 42.5%;
+        width: 107%;
+    }
+`;
+
+const AdvancedRulesBottomDiv = styled.div`
+    width: 100%;
+    height: 100px;
+    margin-bottom: 30px;
+    margin-top: -22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 32px;
+
+    @media(max-width: 635px) {
+        margin-top: 0px;
+    }
+
+    @media(max-width: 375px) {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        height: 150px;
+    }
+`;
+
 export {
     RulesBottomDiv,
     SwitchDifficultyButton,
@@ -138,4 +192,7 @@ export {
     RulesImg,
     CloseIconImg,
     CloseIconImgMobile,
+    AdvancedRulesTopBanner,
+    AdvancedRulesImg,
+    AdvancedRulesBottomDiv,
 }
